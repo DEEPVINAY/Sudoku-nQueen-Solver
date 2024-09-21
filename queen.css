@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+button {
+    padding: 1rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.solver-section {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#nqueen-board {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 5px;
+    margin-top: 2rem;
+}
+
+#nqueen-board div {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#nqueen-board .queen {
+    background-color: #333;
+    color: #fff;
+}
+
+.inputbox {
+    margin: 1rem 0;
+}
+
+input[type="number"] {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 7px;
+    width: 180px;
+}
